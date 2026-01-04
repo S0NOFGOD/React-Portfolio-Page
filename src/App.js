@@ -1,20 +1,14 @@
-import React from "react";
-import Header from "./components/Header";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import "./App.css";
+import { Routes, Route } from "react-router-dom"
+import PortfolioHome from "./Portfolio/PortfolioHome"
+import ProfilepageHome from "./Profilepage/ProfilepageHome"
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Skills />
-      <Projects />
-      <Contact />
-    </div>
-  );
+    <Routes>
+      <Route path="/" element={<PortfolioHome />} />
+      <Route path="/Projects" element={<ProfilepageHome />} />
+    </Routes>
+  )
 }
 
-export default App;
+export default App

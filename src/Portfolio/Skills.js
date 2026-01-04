@@ -1,5 +1,4 @@
 import React from "react";
-import "./Skills.css";
 
 function Skills() {
   const skills = ["HTML", "CSS", "JavaScript", "React", "Responsive Design"];
